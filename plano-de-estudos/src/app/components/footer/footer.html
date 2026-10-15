@@ -1,0 +1,29 @@
+<p>footer works!</p>
+
+<form (ngSubmit)="calcular(); calcular_vetor()">
+    <input 
+    name="numero1"
+    [(ngModel)]="numero1"
+    type="number" 
+    placeholder="Insira o valor 1">
+
+    <p>Digitado: {{ numero1 }}</p>
+
+    <input 
+    name="numero2"
+    [(ngModel)]="numero2"
+    type="number" 
+    placeholder="Insira o valor 2">
+
+    <p>Digitado: {{ numero2 }}</p>
+
+    <button type="submit" click="limpar()">Somar</button>
+</form>
+
+<p>Soma: {{ resultado }}</p>
+
+<ul>
+    @for (valor of vetor; track $index) {
+        <li>{{ valor }}</li>
+    }
+</ul>

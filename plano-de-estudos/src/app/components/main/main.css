@@ -1,0 +1,10 @@
+.lista-cliente {
+    display: grid;
+    gap: 12px;
+}
+
+.cliente-card {
+    border: 1px solid #7238d6;
+    border-radius: 12px;
+    padding: 16px;
+}
