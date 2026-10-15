@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { ClienteCard } from '../cliente-card/cliente-card';
 
 @Component({
-  imports: [FormsModule],
+  imports: [FormsModule, ClienteCard],
   selector: 'app-main',
   styleUrl: './main.css',
   templateUrl: './main.html',

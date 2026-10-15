@@ -32,9 +32,8 @@
 
 <div class="lista-clientes">
     @for (cliente of clientes; track $index) {
-        <article class="cliente-card">
-            <h3>{{ cliente }}</h3>
-            <p>Cliente cadastrado</p>
-        </article>
+        <app-cliente-card
+        [nome]="cliente">
+        </app-cliente-card>
     }
 </div>
