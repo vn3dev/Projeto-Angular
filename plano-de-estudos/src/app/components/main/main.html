@@ -30,6 +30,20 @@
     }
 </ul>
 
+<h3>{{ produtoExemplo.nome }}</h3>
+<p>{{ produtoExemplo.descricao }}</p>
+<strong>{{ produtoExemplo.valor }}</strong>
+
+<div class="lista-produtos">
+    @for (item of produtos; track item.id) {
+        <app-produto-card
+        [nome]="item.nome"
+        [descricao]="item.descricao"
+        [valor]="item.valor">
+        </app-produto-card>
+    }
+</div>
+
 <div class="lista-clientes">
     @for (cliente of clientes; track $index) {
         <app-cliente-card
