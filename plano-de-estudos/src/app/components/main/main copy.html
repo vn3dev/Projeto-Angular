@@ -1,0 +1,54 @@
+<p>main works!</p>
+
+<h1>Clientes cadastrados ({{ clientes.length }})</h1>
+
+<form (ngSubmit)="adicionar()">
+    <input 
+    name="novoCliente"
+    [(ngModel)]="novoCliente"
+    type="text" 
+    placeholder="Nome">
+
+    <p>Digitado: {{ novoCliente }}</p>
+
+    <button type="submit">Cadastrar</button>
+</form>
+
+<button type="button" (click)="limpar()" [disabled]="clientes.length === 0">Limpar lista</button>
+
+@if (clientes.length === 0){
+    <p>Nenhum cliente por aqui</p>
+} 
+
+@if (clientes.length >= 3){
+    <p>Batemo a meta</p>
+} 
+
+<ul>
+    @for (cliente of clientes; track $index) {
+        <li>{{ cliente }}</li>
+    }
+</ul>
+
+<h3>{{ produtoExemplo.nome }}</h3>
+<p>{{ produtoExemplo.descricao }}</p>
+<strong>{{ produtoExemplo.valor }}</strong>
+
+<div class="lista-produtos">
+    @for (item of produtos; track item.id) {
+        <app-produto-card
+        [nome]="item.nome"
+        [descricao]="item.descricao"
+        [valor]="item.valor">
+        </app-produto-card>
+    }
+</div>
+
+<div class="lista-clientes">
+    @for (cliente of clientes; track $index) {
+        <app-cliente-card
+        [nome]="cliente">
+        </app-cliente-card>
+    }
+</div>
+

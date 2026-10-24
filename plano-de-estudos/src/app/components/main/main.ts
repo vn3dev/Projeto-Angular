@@ -1,29 +1,40 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { ClienteCard } from '../cliente-card/cliente-card';
-import { ProdutoCard } from '../produto-card/produto-card';
-import type { Produto } from '../../models/produto';
+import { PlantaCard } from '../planta-card/planta-card';
+import type { Planta } from '../../models/planta';
 
 @Component({
-  imports: [FormsModule, ClienteCard, ProdutoCard],
+  imports: [FormsModule, PlantaCard],
   selector: 'app-main',
   styleUrl: './main.css',
   templateUrl: './main.html',
 })
 export class Main {
-
-  produtos: Produto[] = [
+  
+  plantas: Planta[] = [
     {
       id: 1,
-      nome: 'Teclado',
-      descricao: 'Compacto',
-      valor: 199
+      nome: 'Oliver',
+      luz: 577,
+      umidade: 721,
+      temperatura: 23.3,
+      estado: 'FELIZ'
     },
     {
       id: 2,
-      nome: 'Mouse',
-      descricao: 'Razer sem fio',
-      valor: 5500
+      nome: 'Vanessa',
+      luz: 95,
+      umidade: 103,
+      temperatura: 18.0,
+      estado: 'CRITICO'
+    },
+    {
+      id: 3,
+      nome: 'Kim Jong Un',
+      luz: 731,
+      umidade: 159,
+      temperatura: 27.5,
+      estado: 'COM SEDE'
     }
   ]
 
