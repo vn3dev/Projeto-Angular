@@ -2,14 +2,18 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { PlantaCard } from '../planta-card/planta-card';
 import type { Planta } from '../../models/planta';
+import { FormAula } from '../form-aula/form-aula';
 
 @Component({
-  imports: [FormsModule, PlantaCard],
+  imports: [FormsModule, PlantaCard, FormAula],
   selector: 'app-main',
   styleUrl: './main.css',
   templateUrl: './main.html',
 })
 export class Main {
+
+  tituloForm = 'Cadastro cliente';
+  tituloForm2 = 'Cadastro cliente';
   
   plantas: Planta[] = [
     {
