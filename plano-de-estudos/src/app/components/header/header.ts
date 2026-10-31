@@ -7,5 +7,4 @@ import { Component } from '@angular/core';
   templateUrl: './header.html',
 })
 export class Header {
-  nomeEmpresa: string = 'Mercadão linguiça';
 }

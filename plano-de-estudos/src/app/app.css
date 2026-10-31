@@ -1,0 +1,15 @@
+.celular {
+  width: 100%;
+  max-width: 390px;
+  min-height: 844px;
+
+  margin: 0 auto;
+  padding: 20px;
+
+  background-color: rgb(255, 255, 255);
+  box-sizing: border-box;
+}
+
+.fundo {
+  background-color: rgb(63, 63, 63);
+}
