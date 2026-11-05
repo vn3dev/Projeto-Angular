@@ -1,15 +1,27 @@
-.celular {
+.tela {
+  display: flex;
+  justify-content: center;
+  position: relative;
   width: 100%;
-  max-width: 390px;
-  min-height: 844px;
-
-  margin: 0 auto;
-  padding: 20px;
-
-  background-color: rgb(255, 255, 255);
-  box-sizing: border-box;
+  min-height: 100vh;
 }
 
-.fundo {
-  background-color: rgb(63, 63, 63);
+.celular {
+  width: 390px;
+  min-height: 844px;
+
+  padding: 0;
+  overflow: visible;
+
+  background-color: transparent;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.painel {
+  position: absolute;
+  left: calc(50% + 215px);
+  top: 0;
+  color: white;
+  max-width: 264px;
 }

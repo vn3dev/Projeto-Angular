@@ -1,0 +1,12 @@
+:host{
+    display:block;
+}
+
+article{
+    border: 1px solid #84d638;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+h3 { margin: 0 0 4px; color: #84d638; }
+p { margin: 0; }

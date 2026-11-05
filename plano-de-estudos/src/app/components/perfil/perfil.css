@@ -1,0 +1,18 @@
+.perfil-button {
+  width: 64px;
+  height: 64px;
+
+  border: none;
+  border-radius: 50%;
+
+  padding: 0;
+  overflow: hidden;
+
+  cursor: pointer;
+}
+
+.perfil-button img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

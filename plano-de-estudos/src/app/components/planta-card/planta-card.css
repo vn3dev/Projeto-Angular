@@ -1,0 +1,103 @@
+.planta-card {
+    display: block;
+    width: 100%;
+}
+
+#card {
+    width: 100%;
+    box-sizing: border-box;
+
+    background-color: #F0EAD2;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+#nome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background: linear-gradient(
+        to bottom,
+        #A5B656 0%,
+        #27783E 250%
+    );
+    color: white;
+    padding: 4px;
+}
+
+#estado {
+    padding-top: 6px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+#imagem-feliz {
+    position: absolute;
+    left: -20px;
+    top: calc(50% - 2px);
+    transform: translateY(-50%);
+}
+
+#estado > .col {
+    flex: 0 0 auto;
+    width: auto;
+    padding: 0;
+}
+
+#estado > .col:last-child {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#estado img {
+    display: block;
+    color: #181854
+}
+
+#leituras {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    margin: 0;
+    padding-top: 4px;
+}
+
+#luz, #umidade, #temperatura {
+    flex: 0 0 auto;
+    width: auto;
+    padding: 0;
+}
+
+.FELIZ {
+    background-color:#80D458;
+    padding-left: 12px;
+    font-size: large;
+    padding-top: 4px;
+}
+
+.CRITICO {
+    background-color:#FB2129;
+    padding-left: 24px;
+    font-size: large;
+    padding-top: 4px;
+}
+
+.COM {
+    background-color:#FDDB1C;
+    padding-left: 36px;
+    font-size: large;
+    padding-top: 4px;
+}

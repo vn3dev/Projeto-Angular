@@ -1,10 +1,54 @@
-.lista-cliente {
-    display: grid;
-    gap: 12px;
+.jardim {
+    width: 100%;
+    min-height: 694px; /* Garante que a área tenha, no mínimo, a altura da tela. */
+    max-height: 694px;
+    margin: 0;
+
+    background-image: url('../../../img/fundojardim.png'); /* Define a imagem usada como fundo. */
+    background-size: cover; /* Redimensiona a imagem para cobrir toda a área. */
+    background-position: center; /* Mantém o centro da imagem visível. */
+    background-repeat: no-repeat; /* Impede que a imagem fique se repetindo. */
 }
 
-.cliente-card {
-    border: 1px solid #7238d6;
-    border-radius: 12px;
-    padding: 16px;
+.lista-plantas {
+    display: grid;
+    grid-template-columns: repeat(2, 160px);
+    column-gap: 28px;
+    row-gap: 20px;
+
+    justify-content: center;
+    padding: 10px;
+}
+
+.nova-planta {
+    position: relative;
+    height: 141px;
+    background-color: #F0EAD2;
+    border-radius: 6px;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+.fundoverde {
+    position: absolute;
+    inset: 4px;
+    background: linear-gradient(
+        to bottom,
+        #A5B656 0%,
+        #27783E 150%
+    );
+    border-radius: 6px;
+    padding-top: 6px;
+    box-sizing: border-box;
+}
+
+.escrita-novaplanta {
+    color:white;
+    font-size: larger;
+    text-align: center;
+}
+
+.botao-adicionar {
+    display: flex;
+    justify-content: center;
 }

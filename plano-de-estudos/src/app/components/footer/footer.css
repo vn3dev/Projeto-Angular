@@ -1,0 +1,41 @@
+.menuinferior {
+    height: 68px;
+    width: 390px;
+    background-color: #6C584C;
+
+    margin: 0;
+    display: flex;
+}
+
+.botao-loja {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao-inventario {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao-loja {
+    position: relative;
+}
+
+.botao-loja::after {
+    content: "";
+    position: absolute;
+
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 4px;
+    height: 48px;
+    background-color: #A98467;
+
+    border-radius: 10%;
+}

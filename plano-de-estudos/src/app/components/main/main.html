@@ -1,12 +1,23 @@
-<div class="lista-plantas">
-    @for (planta of plantas; track planta.id) {
-        <app-planta-card
-        [nome]="planta.nome"
-        [luz]="planta.luz"
-        [umidade]="planta.umidade"
-        [temperatura]="planta.temperatura"
-        [estado]="planta.estado">
-        </app-planta-card>
-    }
+<div class="jardim">
+    <div class="lista-plantas">
+        @for (planta of plantas; track planta.id) {
+            <app-planta-card
+            [nome]="planta.nome"
+            [luz]="planta.luz"
+            [umidade]="planta.umidade"
+            [temperatura]="planta.temperatura"
+            [estado]="planta.estado">
+            </app-planta-card>
+        }
+        <div class="nova-planta">
+            <div class="fundoverde">
+                <div class="botao-adicionar">
+                    <img src="/img/mais.png" alt="botao em cruz">
+                </div>
+                <div class="escrita-novaplanta">
+                <p>Nova planta</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-

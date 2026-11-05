@@ -1,0 +1,26 @@
+.menusuperior {
+    height: 82px;
+    width: 390px;
+    background-color: #f0ead2;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    position: relative;
+    box-sizing: border-box;
+}
+
+.menusuperior h4 {
+    margin: 0;
+}
+
+.fotoperfil {
+    position: absolute;
+    right: 14px;
+}
+
+.botaovoltar {
+    position: absolute;
+    left: 2px;
+}

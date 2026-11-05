@@ -1,0 +1,13 @@
+.mensagem {
+    background-color: rgb(31, 31, 31);
+    padding: 12px;
+    border-radius: 4%;
+}
+
+.botao-figma {
+    border-radius: 6px;
+}
+
+.avisoIA {
+    padding: 12px;
+}

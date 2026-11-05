@@ -1,22 +1,51 @@
 <article class="planta-card">
     <div>
-        <div class="container text-center">
-            <div class="row">
+        <div class="container text-center" id="card">
+            <div class="row" id="nome">
                 {{ nome }}
             </div>
-            <div class="row">
-                <div class="col">
+            <div class="row" id="leituras">
+                <div class="col" id="luz">
+                    @if (luz >= 100) {
+                    <div class="imagem-luz">
+                        <img src="/img/Luz.png" alt="Icone de luminosidade">
+                    </div>
+                    }
+                    @if (luz < 100) {
+                    <div class="imagem-noite">
+                        <img src="/img/Luz2.png" alt="Icone de luminosidade">
+                    </div>  
+                    }
                     {{ luz }}
                 </div>
-                <div class="col">
+                <div class="col" id="umidade">
+                    <div class="imagem-umidade">
+                        <img src="/img/Umidade.png" alt="Icone de umidade">
+                    </div>
                     {{ umidade }}
                 </div>
-                <div class="col">
+                <div class="col" id="temperatura">
+                    <div class="imagem-temperatura">
+                        <img src="/img/Temp.png" alt="Icone de temperatura">
+                    </div>
                     {{ temperatura }}
                 </div>
             </div>
-            <div class="row">
-                {{ estado }}
+            <div class="row" id="estado">
+                <div class="col" id="imagem-feliz">
+                    @if (estado === "FELIZ") {
+                        <img src="/img/feliz.png" alt="Icone rosto sorridente">
+                    }
+                    @if (estado === "CRITICO") {
+                        <img src="/img/critico.png" alt="Icone rosto doente">                      
+                    }
+                    @if (estado === "COM SEDE") {
+                        <img src="/img/comsede.png" alt="Icone rosto pokerface '-'">                      
+                    }
+                </div>
+                <div [class]="estado">
+                {{ estado }}         
+                </div>
             </div>
         </div>
     </div>
