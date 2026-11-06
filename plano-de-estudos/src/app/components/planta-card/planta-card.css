@@ -89,10 +89,11 @@
 }
 
 .CRITICO {
-    background-color:#FB2129;
+    background-color:#B91C1C;
     padding-left: 24px;
     font-size: large;
     padding-top: 4px;
+    color: white
 }
 
 .COM {
